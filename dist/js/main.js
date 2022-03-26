@@ -1,1 +1,1 @@
-(()=>{"use strict";console.log("One Module"),console.log("Two Module")})();
+(()=>{"use strict";(()=>{const e=document.querySelector(".modal-callback"),l=document.querySelector(".modal-overlay");document.addEventListener("click",(t=>(t=>{t.preventDefault(),(t.target.closest(".callback-btn")||t.target.closest(".button-services"))&&(e.style.display="block",l.style.display="block"),(t.target.closest(".modal-close")||t.target.closest(".modal-overlay"))&&(e.style.display="none",l.style.display="none")})(t)))})(),console.log("Two Module")})();
