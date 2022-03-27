@@ -1,6 +1,6 @@
 import modal from './modules/modal';
-import two from './modules/two';
+import accordeon from './modules/accordeon';
 
 modal();
-two();
+accordeon();
 
