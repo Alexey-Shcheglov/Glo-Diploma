@@ -14,7 +14,7 @@ const smoothScroll = () => {
 	upToTop.addEventListener('click', (e) => {
 		e.preventDefault();
 		const idTop = upToTop.getAttribute('href');
-		console.log(idTop)
+		console.log(idTop);
 
 		document.querySelector(idTop).scrollIntoView({
 			behavior: 'smooth',
