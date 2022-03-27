@@ -5,7 +5,7 @@ const modal = () => {
 
 	const toggleModal = (e) => {
 		e.preventDefault();
-		if (e.target.closest('.callback-btn') || e.target.closest('.button-services')) {
+		if (e.target.closest('.callback-btn') || e.target.closest('.button-services') || e.target.closest('.service-slider')) {
 			
 			modalCallback.style.display = 'block';
 			modalOverlay.style.display = 'block';
