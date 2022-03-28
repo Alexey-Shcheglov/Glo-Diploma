@@ -1,7 +1,9 @@
 const smoothScroll = () => {
-	const currentSection = document.querySelector('.push70');
+	const currentSection = document.querySelector('.services-section');
 	const up = document.querySelector('.up');
 	const upToTop = document.querySelector('.up_to_top');
+
+	up.style.display = 'none';
 
 	window.addEventListener('scroll', () => {
 		const top = document.documentElement.scrollTop;
