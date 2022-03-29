@@ -17,7 +17,7 @@ const sendForm = ({formId, someElem = []}) => {
     list.forEach(input => {
 
       //to check name input
-      if(input.name === "fio" && (/[^а-яА-Я]/g.test(input.value) || input.value === "" ||input.value.length < 2)){
+      if(input.name === "fio" && (/[^а-яА-Я ]/g.test(input.value) || input.value === "" ||input.value.length < 2)){
         alert("Введите ваше имя на кириллице, имя должно состоять минимум из двух букв");
         success = false;
       }
