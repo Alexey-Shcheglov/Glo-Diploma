@@ -4,14 +4,14 @@ const validation = () => {
 
 	formNameInput.addEventListener('input', (e) => {
 		e.preventDefault();
-		e.target.value = e.target.value.replace(/[^а-яА-Я]/g,"");
+		e.target.value = e.target.value.replace(/[^а-яА-Я ]/g,"");
 	});
 
 	formNameInput.addEventListener('blur', (e) => {
 		e.preventDefault();
 		
 		e.target.value = e.target.value.replace(/^[а-я]/g, function(letter) {
-			return letter.toUpperCase(); });
+			return letter.toUpperCase(); }).trim();
 		e.target.value = e.target.value.replace(/(?!^)[А-Я]/g, function(letter) {
 			return letter.toLowerCase(); });
 	});
